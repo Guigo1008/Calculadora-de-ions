@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Íons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="./Forcode.png" alt="for_code" class="imgtit"/>
+        </figure>
+        <nav>
+            <a href="" class="atit">Github</a>
+            <a href="" class="atit">Instagram</a>
+            <a href="" class="atit">Instruções</a>
+            <a href="" class="atit">Quem Somos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="esquerda">
+            <div class="sal">
+                <span>SAL 1</span>
+                <nav>
+                    <figure class="naotit">
+                        <input type="input" class="inputs" placeholder="mol/L" id="conc1">
+                        <figcaption>Concentração</figcaption>
+                    </figure>
+                    <figure class="naotit">
+                        <select name="Cátion" class="inputs" id="cat1">
+                            <option selected disabled value="">Cátion</option>
+                            <option value="0">Ag+</option>
+                            <option value="1">Cu+</option>
+                            <option value="2">Tl+</option>
+                        </select>
+                        <figcaption>Cátion</figcaption>
+                    </figure>
+                    <figure class="naotit">
+                        <select name="Ânion" class="inputs" id="an1">
+                            <option selected disabled value="">Ânion</option>
+                            <option value="0">Br-</option>
+                            <option value="1">Cl-</option>
+                            <option value="2">SCN-</option>
+                            <option value="3">I-</option>
+                        </select>
+                        <figcaption>Ânion</figcaption>
+                    </figure>
+                    <figure class="naotit">
+                        <input type="input" class="inputs" placeholder="L" id="vol1">
+                        <figcaption>Volume</figcaption>
+                    </figure>
+                </nav>
+            </div>
+            <div class="sal">
+                <span>SAL 2</span>
+                    <nav>
+                        <figure class="naotit">
+                            <input type="input" class="inputs" placeholder="mol/L" id="conc2">
+                            <figcaption>Concentração</figcaption>
+                        </figure>
+                        <figure class="naotit">
+                            <select name="Cátion" class="inputs" id="cat2">
+                                <option selected disabled value="">Cátion</option>
+                                <option value="0">Ag+</option>
+                                <option value="1">Cu+</option>
+                                <option value="2">Tl+</option>
+                            </select>
+                            <figcaption>Cátion</figcaption>
+                        </figure>
+                        <figure class="naotit">
+                            <select name="Ânion" class="inputs" id="an2">
+                                <option selected disabled value="">Ânion</option>
+                                <option value="0">Br-</option>
+                                <option value="1">Cl-</option>
+                                <option value="2">SCN-</option>
+                                <option value="3">I-</option>
+                            </select>
+                            <figcaption>Ânion</figcaption>
+                        </figure>
+                        <figure class="naotit">
+                            <input type="input" class="inputs" placeholder="L" id="vol2">
+                            <figcaption>Volume</figcaption>
+                        </figure>
+                    </nav>
+            </div>
+            <span class="res">Resultados:</span>
+            <div>
+                <span id="sal1r">Sal 1<br>Concentração do ânion 1 =<span id="resposta1.1"></span> Concentração do cátion 1 =<span id="resposta1.2"></span></span><br>
+                <span id="sal2r">Sal 2<br>Concentração do ânion 2 =<span id="resposta2.1"></span> Concentração do cátion 2 =<span id="resposta2.2"></span></span><br>
+            </div>
+        </section>
+        <section class="direita">
+            <div>
+                <select name="pH" class="btnph" id="ph">
+                    <option selected disabled value="">pH</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+            </div>
+            <input value="Dica" class="btndica" disabled>
+            <button class="btncalc" id="butao">Calcular!</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="lógica.js"></script>
+</body>
+</html>
